@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+section,nav{
+    padding: 0.5rem 2.5rem;
+}
+.btn{
+   
+    background-color: rgb(251 146 60);
+    color: black;
+    padding: 0.8rem 1.5rem;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color, 500ms , ease-in, 1000ms;
+}
+.btn:hover{
+   color:orange;
+   background-color: black;
+   border: 1px solid orange;
+}
+
+.slick-prev:before {
+    content: '←';
+    color: black;
+    font-size: 2rem;
+}
+.slick-next:before {
+    content: '→';
+    color: black;
+    font-size: 2rem;
+}
+
+@media screen and (max-width:520px){
+    .slick-prev:before {   
+        font-size: 0.5rem;
+    }
+    .slick-next:before {
+          
+        font-size: 0.5rem;
+       
+    }
+}
+
+.heading{
+    @apply  flex flex-col items-center justify-center text-5xl italic font-bold text-orange-400;
+    
+}
+
+.fotheader{
+    @apply text-2xl font-bold italic
+}
+.fotpara {
+    @apply text-lg 
+}
+
+#navbarrr{
+   
+}
